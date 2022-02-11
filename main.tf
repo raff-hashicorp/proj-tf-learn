@@ -8,6 +8,9 @@ terraform {
   }
 
   required_version = ">= 1.1.5"
+  
+  #Paste Terraform Cloud Integration Code Here
+  
 }
 
 provider "azurerm" {
@@ -15,6 +18,6 @@ provider "azurerm" {
 }
 
 resource "azurerm_resource_group" "rg" {
-  name     = "rs-proj-tf-learn"
+  name     = "FirstName-LastNameInitial-Azure-TF-Learn" # Update the resource group name
   location = "canadacentral"
 }
